@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wcml
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0024-tenant/ci10t-786-0024-app/devfile-sample-wcml@sha256:17a05811f59d117a329444a2c9e762915ac4ae509f85b1347206bc91a61e4379
+        name: my-nodejs
+        resources: {}
+status: {}
